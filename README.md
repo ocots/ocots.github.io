@@ -4,7 +4,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [<img src="./figures/logo-apo-r.jpg" alt="APO" height="60px"/>](https://www.irit.fr/departement/calcul-intensif-simulation-optimisation/equipe-apo/)
 
-[<img src="./figures/ocots.png" alt="ENSEEIHT" HEIGHT="100px" style="float: left;"/>](https://ocots.github.io)
+[<img src="./figures/ocots.png" alt="ENSEEIHT" HEIGHT="160px" style="float: left;"/>](https://ocots.github.io)
 
 Associate professor of applied mathematics at
 <a href="http://www.irit.fr/">IRIT (UMR CNRS 5505)</a>, 
