@@ -4,9 +4,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [<img src="./figures/logo-apo-r.jpg" alt="APO" height="60px"/>](https://www.irit.fr/departement/calcul-intensif-simulation-optimisation/equipe-apo/)
 
-[<img src="./figures/ocots.png" alt="ENSEEIHT" HEIGHT="200px" style="float: left;"/>](https://ocots.github.io)
+[<img src="./figures/ocots.png" alt="ENSEEIHT" HEIGHT="100px" style="float: left;"/>](https://ocots.github.io)
 
-</br></br></br>
 Associate professor of applied mathematics at
 <a href="http://www.irit.fr/">IRIT (UMR CNRS 5505)</a>, 
 <a href="http://www.enseeiht.fr/fr">ENSEEIHT (D&eacute;pt. SN)</a>.
@@ -18,7 +17,6 @@ member of
 <a href="http://smai.emath.fr/spip.php?article330&lang=fr">SMAI-MODE</a>,
 <a href="https://perso.math.univ-toulouse.fr/spot/">SPOT</a>.
 
-</br></br>
 
 ## Contact and profile
 
