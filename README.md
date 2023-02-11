@@ -17,6 +17,7 @@ member of
 <a href="http://smai.emath.fr/spip.php?article330&lang=fr">SMAI-MODE</a>,
 <a href="https://perso.math.univ-toulouse.fr/spot/">SPOT</a>.
 
+<img src="./figures/blanc.png" HEIGHT=80px BORDER=0 style="left;">
 
 ## Contact and profile
 
