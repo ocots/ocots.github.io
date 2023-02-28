@@ -40,7 +40,7 @@ member of
 
 <a href="http://hampath.org"><img src="./figures/logo-hampath.png" HEIGHT="60px"  BORDER="0"></a> [hampath](http://hampath.org): A Fortran code with a Python interface to solve optimal control problems by indirect and path following methods. Since 2009.
 
-<a href="https://ct.gitlabpages.inria.fr/nutopy/"><img src="./figures/logo-nt.png" HEIGHT="60px"  BORDER="0"></a> [nutopy](https://ct.gitlabpages.inria.fr/nutopy/): NUmerical TOolbox in PYthon (nutopy) to solve optimal control problems. See the [gallery](https://ct.gitlabpages.inria.fr/gallery) of examples. Since 2019.
+<a href="https://ct.gitlabpages.inria.fr/nutopy/"><img src="./figures/logo-nt.png" HEIGHT="60px"  BORDER="0"></a> [nutopy](https://ct.gitlabpages.inria.fr/nutopy/): NUmerical TOolbox in PYthon (nutopy) to solve optimal control problems. See the [gallery](http://control-toolbox.inria.fr) of examples. Since 2019.
 
 <a href="https://ct.gitlabpages.inria.fr/gallery/notebooks.html" ><img src="./figures/notebook-logo.png" width="100px"  BORDER="0"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
