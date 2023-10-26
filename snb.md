@@ -10,6 +10,10 @@ Big Data • Intelligence artificielle • Machine Learning • Objets connecté
 
 **Programme 2A** : [Semestre 7](http://formations.enseeiht.fr/fr/offre-de-formations/diplome-d-ingenieur-FC_DI/diplome-D/ingenieur-enseeiht-informatique-et-telecommunications-program-n7i5-171/ingenieur-enseeiht-informatique-et-telecommunications-2eme-annee-subprogram-n7i52-181/annee-2a-sn-fise-NDEN/choix-de-parcours-semestre-7-2a-sn-fise-N7ENA/semestre-7-sn-fise-parcours-hpc-et-big-data-N7ENAB.html), [Semestre 8](http://formations.enseeiht.fr/fr/offre-de-formations/diplome-d-ingenieur-FC_DI/diplome-D/ingenieur-enseeiht-informatique-et-telecommunications-program-n7i5-171/ingenieur-enseeiht-informatique-et-telecommunications-2eme-annee-subprogram-n7i52-181/annee-2a-sn-fise-NDEN/choix-de-parcours-semestre-8-2a-sn-fise-N8ENA/semestre-8-sn-fise-parcours-hpc-et-big-data-N8ENAB.html)
 
+Responsable 2A : Ehouarn Simon
+
+Intitulés des matières 2A :
+
 - Programmation fonctionnelle / Compilation
 - Optimisation 1 / Recherche opérationnelle
 - Systèmes concurrents communicants
@@ -23,12 +27,18 @@ Big Data • Intelligence artificielle • Machine Learning • Objets connecté
 
 **Programme 3A** : [Semestre 9](http://formations.enseeiht.fr/fr/offre-de-formations/diplome-d-ingenieur-FC_DI/diplome-D/ingenieur-enseeiht-informatique-et-telecommunications-program-n7i5-171/ingenieur-enseeiht-informatique-et-telecommunications-3eme-annee-subprogram-n7i53-181/annee-3a-informatique-et-telecommunication-sn-NEEN/choix-de-parc-semestre-9-3a-info-et-telecom-sn-N9EN/semestre-9-sn-parcours-hpc-et-big-data-N9ENAB.html)
 
+Responsable 3A : Olivier Cots
+
+Intitulés des matières 3A :
+
 - Problèmes inverses
 - Big data non structurées
 - High performance scientific computing
 - Systèmes et algorithmique répartis et sécurité
 - Calcul réparti
 - Cloud et Big data, Machine learning
+
+Remarque : une partie de l'enseignement en 3A se déroule à l'école de la Météo (le vendredi).
 
 **Ce qu'il faut retenir** : 
 
