@@ -8,7 +8,7 @@ Big Data • Intelligence artificielle • Machine Learning • Objets connecté
 
 ## Parcours HPC et Big Data (B)
 
-**Programme 2A** : 
+**Programme 2A** : [Semestre 7](http://formations.enseeiht.fr/fr/offre-de-formations/diplome-d-ingenieur-FC_DI/diplome-D/ingenieur-enseeiht-informatique-et-telecommunications-program-n7i5-171/ingenieur-enseeiht-informatique-et-telecommunications-2eme-annee-subprogram-n7i52-181/annee-2a-sn-fise-NDEN/choix-de-parcours-semestre-7-2a-sn-fise-N7ENA/semestre-7-sn-fise-parcours-hpc-et-big-data-N7ENAB.html), [Semestre 8](http://formations.enseeiht.fr/fr/offre-de-formations/diplome-d-ingenieur-FC_DI/diplome-D/ingenieur-enseeiht-informatique-et-telecommunications-program-n7i5-171/ingenieur-enseeiht-informatique-et-telecommunications-2eme-annee-subprogram-n7i52-181/annee-2a-sn-fise-NDEN/choix-de-parcours-semestre-8-2a-sn-fise-N8ENA/semestre-8-sn-fise-parcours-hpc-et-big-data-N8ENAB.html)
 
 - Programmation fonctionnelle / Compilation
 - Optimisation 1 / Recherche opérationnelle
@@ -21,7 +21,7 @@ Big Data • Intelligence artificielle • Machine Learning • Objets connecté
 - Contrôle et analyse mutlirésolution
 - Machine learning et optimisation
 
-**Programme 3A** : 
+**Programme 3A** : [Semestre 9](http://formations.enseeiht.fr/fr/offre-de-formations/diplome-d-ingenieur-FC_DI/diplome-D/ingenieur-enseeiht-informatique-et-telecommunications-program-n7i5-171/ingenieur-enseeiht-informatique-et-telecommunications-3eme-annee-subprogram-n7i53-181/annee-3a-informatique-et-telecommunication-sn-NEEN/choix-de-parc-semestre-9-3a-info-et-telecom-sn-N9EN/semestre-9-sn-parcours-hpc-et-big-data-N9ENAB.html)
 
 - Problèmes inverses
 - Big data non structurées
@@ -29,3 +29,11 @@ Big Data • Intelligence artificielle • Machine Learning • Objets connecté
 - Systèmes et algorithmique répartis et sécurité
 - Calcul réparti
 - Cloud et Big data, Machine learning
+
+**Ce qu'il faut retenir** : 
+
+- dans le parcours B, l'étudiant apprend à concevoir, implémenter des algorithmes pour la résolution de problèmes **complexes** issus de l'algèbre linéaire, de l'optimisation, etc. Ces problèmes sont dits complexes en raison par exemple de la grande taille des données (besoin de calcul haute performance, de communication...) ou de la nature même du problème (besoin de machine learning pour l'estimation de paramètres dans les modèles...). Il y a une notion importante de passage à l'échelle sur des infrastructures dédiées et on s'intéresse aussi bien à la performance qu'à la consommation d'énergie par exemple.
+- dans le parcours B, l'étudiant apprend à identifier l'influence des options/paramètres des algorithmes sur les résultats numériques et doit donc être capable de développer des tests et mener à bien des expérimentations numériques en accord avec ces objectifs.
+- enfin, l'étudiant apprend à analyser les résultats et porter un regard critique par la confrontation des résultats aux données, que ce soit les modèles mathématiques sous-jacents ou des données expérimentales. La partie modèle mathématique est développée dans le cadre de la formation tandis que la compréhension des données expérimentales vient plutôt des aspects métiers.
+
+**En conclusion**, pour un étudiant du parcours B, il faut aimer des mathématiques et de l'informatique !
