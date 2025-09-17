@@ -100,8 +100,8 @@
 
   // Initialize HALtools CSS once the DOM is ready
   if (document.readyState === 'complete' || document.readyState === 'interactive') {
-    setTimeout(updateHaltoolsCss, 0);
+    setTimeout(updateHaltoolsCss, 100);
   } else {
-    document.addEventListener('DOMContentLoaded', updateHaltoolsCss);
+    document.addEventListener('DOMContentLoaded', () => setTimeout(updateHaltoolsCss, 100));
   }
 })();
