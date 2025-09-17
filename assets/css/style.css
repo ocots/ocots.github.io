@@ -189,6 +189,12 @@ ul { margin: 0; padding: 0 0 0 1.1rem; }
 .pub-links a:hover { color: var(--text); }
 .muted { color: var(--muted); }
 
+/* Embedded cards (e.g., SEDOO HAL widget) */
+.embed-card { margin-top: 0.8rem; padding: 1rem 1.2rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); transition: background .15s ease, border-color .15s ease; }
+.embed-card:hover { background: color-mix(in oklab, var(--surface), var(--brand) 6%); border-color: color-mix(in oklab, var(--border), var(--brand) 18%); }
+.embed-card h3 { margin: 0 0 0.6rem; }
+.embed-card hal-list { display: block; }
+
 /* Contact */
 .contact-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.6rem; }
 .contact-list .label { display: inline-block; width: 72px; color: var(--muted); font-weight: 600; }

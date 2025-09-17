@@ -8,6 +8,9 @@
   const pubList = document.getElementById('pub-list');
   const pubLoading = document.getElementById('pub-loading');
   const pubFallback = document.getElementById('pub-fallback');
+  const halEmbed = document.getElementById('hal-embed');
+  const halEmbedFrame = document.getElementById('hal-embed-frame');
+  const halEmbedLoader = document.getElementById('hal-embed-loader');
 
   // Update footer year
   if (yearEl) yearEl.textContent = new Date().getFullYear();
@@ -87,6 +90,7 @@
         pubFallback.style.display = 'block';
         pubFallback.innerHTML = 'To load publications automatically, open this site via a local server (e.g., <code>python3 -m http.server</code>) or deploy to GitHub Pages.';
       }
+      showHALIframe();
       return;
     }
     try {
@@ -125,6 +129,7 @@
 
       if (!docs.length) {
         if (pubFallback) pubFallback.style.display = 'block';
+        showHALIframe();
         return;
       }
 
@@ -165,7 +170,19 @@
     } catch (e) {
       if (pubLoading) pubLoading.remove();
       if (pubFallback) pubFallback.style.display = 'block';
+      showHALIframe();
       // Optional: console.warn('HAL fetch failed', e);
+    }
+  }
+
+  function showHALIframe() {
+    if (halEmbed) halEmbed.style.display = 'block';
+    if (halEmbedFrame) {
+      const onLoad = () => {
+        if (halEmbedLoader) halEmbedLoader.style.display = 'none';
+        halEmbedFrame.removeEventListener('load', onLoad);
+      };
+      halEmbedFrame.addEventListener('load', onLoad);
     }
   }
 
@@ -183,5 +200,44 @@
     requestIdleCallback(loadHALPublications, { timeout: 2000 });
   } else {
     setTimeout(loadHALPublications, 0);
+  }
+
+  // Configure SEDOO hal-list: set page size to 10 and ensure 10 is in the options
+  function tryConfigureSedoo() {
+    const halList = document.querySelector('#hal-sedoo hal-list');
+    if (!halList) return false;
+    // Look for a select inside the hal-list (light DOM). If the component uses shadow DOM, this may not work.
+    const select = halList.querySelector('select');
+    if (!select) return false;
+    // Ensure option 10 exists
+    let has10 = false;
+    Array.from(select.options).forEach(o => { if (o.value === '10' || o.textContent.trim() === '10') has10 = true; });
+    if (!has10) {
+      const opt = document.createElement('option');
+      opt.value = '10';
+      opt.textContent = '10';
+      select.insertBefore(opt, select.firstChild);
+    }
+    // Set default to 10
+    select.value = '10';
+    select.dispatchEvent(new Event('change', { bubbles: true }));
+    return true;
+  }
+
+  function configureSedooWidget() {
+    if (tryConfigureSedoo()) return;
+    // Observe future mutations in case the widget renders asynchronously
+    const container = document.getElementById('hal-sedoo');
+    if (!container) return;
+    const obs = new MutationObserver(() => {
+      if (tryConfigureSedoo()) obs.disconnect();
+    });
+    obs.observe(container, { childList: true, subtree: true });
+  }
+
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    setTimeout(configureSedooWidget, 0);
+  } else {
+    document.addEventListener('DOMContentLoaded', configureSedooWidget);
   }
 })();

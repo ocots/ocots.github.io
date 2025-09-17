@@ -14,6 +14,8 @@
 
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- SEDOO HAL integration -->
+    <script src="https://api.sedoo.fr/aeris-cdn-rest/jsrepo/v1_0/download/sandbox/release/sedoo-publications-vjs/0.1.0"></script>
     <script>
       // Replace no-js class for progressive enhancement
       document.documentElement.classList.remove('no-js');
@@ -134,15 +136,14 @@
             <li><a class="tile" href="https://www.researchgate.net/profile/Olivier-Cots?ev=hdr_xprf" target="_blank" rel="noopener"><span>ResearchGate</span></a></li>
             <li><a class="tile" href="https://arxiv.org/a/0000-0002-4703-4369.html" target="_blank" rel="noopener"><span>arXiv</span></a></li>
           </ul>
-
-          <div class="pubs" id="hal-pubs" aria-live="polite">
-            <h3>Latest on HAL</h3>
-            <ul class="pub-list" id="pub-list">
-              <li class="muted" id="pub-loading">Loading recent publications…</li>
-            </ul>
-            <p class="muted" id="pub-fallback" style="display:none;">
-              Unable to load items automatically. See all on <a href="https://cv.hal.science/ocots" target="_blank" rel="noopener">HAL</a>.
-            </p>
+          <!-- SEDOO HAL widget (preferred integration) -->
+          <div class="embed-card" id="hal-sedoo">
+            <h3>Publications HAL — dernières années</h3>
+            <hal-list
+              search-fields="authIdHal_s"
+              search-values="ocots"
+              search-criteria="years,authors,keywords"
+            ></hal-list>
           </div>
         </div>
       </section>
