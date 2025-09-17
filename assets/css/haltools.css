@@ -1,0 +1,136 @@
+/* Custom theme for HALtools output to match Olivier Cots website */
+
+:root {
+  --bg: #0b0c10;
+  --bg-elev: #12131a;
+  --text: #e8eaf0;
+  --muted: #b9bfd1;
+  --brand: #5ac8fa;
+  --accent: #a78bfa;
+  --border: #242633;
+  --tile: #151826;
+  --radius: 14px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg) !important;
+  color: var(--text) !important;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.6;
+}
+
+a { color: var(--brand); text-decoration: none; }
+a:hover { color: #2fb3f7; }
+
+/* Container */
+#page, #contenu, #content, body > div, #container, .container, .page, .main, .wrapper {
+  padding: 18px 20px;
+  background: transparent !important;
+  color: inherit !important;
+}
+
+/* Ensure HALtools root container uses dark/transparent background */
+#res_script {
+  background: transparent !important;
+  color: var(--text) !important;
+}
+
+/* Defensive override for any white backgrounds coming from VisuGen.css */
+#res_script *,
+#res_script *:before,
+#res_script *:after {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+
+/* Basic typography inside HALtools */
+#res_script p.Rubrique,
+#res_script p.SousRubrique {
+  color: var(--text) !important;
+  margin: 14px 0 6px;
+}
+
+/* Entries styling fallback when class names don't match our generic blocks */
+#res_script dl.NoticeRes {
+  background: linear-gradient(180deg, var(--bg-elev), var(--tile)) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin: 10px 0;
+}
+
+#res_script dd.ValeurRes,
+#res_script dt.ChampRes {
+  color: var(--text) !important;
+}
+
+/* Titles */
+h1, h2, h3 { color: var(--text); margin: 0 0 0.5rem; }
+h2 { border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
+
+/* Publication blocks */
+.publi_liste, .liste_publi, .resultats, .liste {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.publi, .entry, .ref_biblio, .notice, .item, .bloc_publi {
+  background: linear-gradient(180deg, var(--bg-elev), var(--tile));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin: 10px 0;
+}
+
+/* Metadata */
+.ref, .details, .meta, .type, .date, .journal {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+/* Headings inside entries */
+.titre, .title, .bib_title, .entry-title {
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* Filters (if visible) */
+#menu, .menu, .filtres, .filters {
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+  border-radius: var(--radius);
+  padding: 10px;
+}
+
+/* Tables (if any) */
+table { width: 100%; border-collapse: collapse; }
+th, td { border-bottom: 1px solid var(--border); padding: 8px; }
+th { text-align: left; color: var(--muted); font-weight: 600; }
+
+/* Pagination controls */
+.pagination, .navpages, .pages {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+.pagination a, .pages a, .pagination strong {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: var(--tile);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+.pagination a:hover { background: rgba(90,200,250,0.12); border-color: rgba(90,200,250,0.4); }
+
+/* Badges (optional) */
+.badge, .tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(90,200,250,0.18);
+  color: var(--text);
+}
