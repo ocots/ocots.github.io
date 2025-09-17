@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OC">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
       <stop offset="0%" stop-color="#5ac8fa"/>
-      <stop offset="100%" stop-color="#a78bfa"/>
-    </linearGradient>
+      <stop offset="100%" stop-color="#2fb3f7"/>
+    </radialGradient>
   </defs>
-  <rect x="0" y="0" width="512" height="512" rx="128" fill="url(#g)"/>
-  <circle cx="256" cy="256" r="200" fill="rgba(255,255,255,0.06)"/>
-  <g fill="#ffffff">
-    <path d="M158 328c0-6.6 5.4-12 12-12h62c26.5 0 48-21.5 48-48s-21.5-48-48-48h-50c-6.6 0-12-5.4-12-12s5.4-12 12-12h52c39.8 0 72 32.2 72 72s-32.2 72-72 72h-64c-6.6 0-12-5.4-12-12z"/> <!-- C -->
-    <path d="M314 176c6.6 0 12 5.4 12 12v136c0 6.6-5.4 12-12 12s-12-5.4-12-12V188c0-6.6 5.4-12 12-12z"/> <!-- I -->
+  <!-- Blue round -->
+  <circle cx="256" cy="256" r="240" fill="url(#bg)"/>
+  <!-- subtle inner ring -->
+  <circle cx="256" cy="256" r="238" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="4"/>
+  <!-- OC letters -->
+  <g fill="#ffffff" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif" font-weight="800" font-size="210" text-anchor="middle" dominant-baseline="middle">
+    <text x="256" y="272" letter-spacing="-6">OC</text>
   </g>
 </svg>
