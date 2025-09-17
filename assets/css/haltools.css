@@ -21,8 +21,22 @@ html, body {
   line-height: 1.6;
 }
 
-a { color: var(--brand); text-decoration: none; }
-a:hover { color: #2fb3f7; }
+a { color: var(--brand) !important; text-decoration: none; }
+a:hover { color: #2fb3f7 !important; }
+
+/* Force link colors inside HALtools iframe */
+#res_script a,
+#res_script a:link,
+#res_script a:visited {
+  color: var(--brand) !important;
+  text-decoration: none;
+}
+
+#res_script a:hover,
+#res_script a:focus {
+  color: #2fb3f7 !important;
+  text-decoration: underline;
+}
 
 /* Container */
 #page, #contenu, #content, body > div, #container, .container, .page, .main, .wrapper {
