@@ -2,13 +2,15 @@
 
 :root {
   --bg: #ffffff;
-  --bg-elev: #f7f8fb;
-  --text: #11131a;
-  --muted: #4a5164;
-  --brand: #0066ff;
-  --accent: #6b46c1;
-  --border: #e6e8ef;
-  --tile: #f5f7ff;
+  --bg-elev: #f8fafc;
+  --text: #2a2d46;
+  --muted: #6b7280;
+  --brand: #f84b0f;
+  --brand-strong: #e63946;
+  --accent: #1947ba;
+  --surface: #ffffff;
+  --border: #e2e8f0;
+  --tile: #f1f5f9;
   --radius: 14px;
 }
 
@@ -21,10 +23,7 @@ html, body {
   line-height: 1.6;
 }
 
-a { color: var(--brand) !important; text-decoration: none; }
-a:hover { color: #004fe0 !important; }
-
-/* Force link colors inside HALtools iframe */
+/* Force link colors inside HALtools iframe - General */
 #res_script a,
 #res_script a:link,
 #res_script a:visited {
@@ -34,8 +33,37 @@ a:hover { color: #004fe0 !important; }
 
 #res_script a:hover,
 #res_script a:focus {
-  color: #004fe0 !important;
+  color: var(--brand-strong) !important;
   text-decoration: underline;
+}
+
+/* Specific targeting for HALtools title and DOI links */
+#res_script .titre a,
+#res_script .title a,
+#res_script .bib_title a,
+#res_script .entry-title a,
+#res_script dd.ValeurRes a,
+#res_script dt.ChampRes a,
+#res_script .doi a,
+#res_script .DOI a,
+#res_script .lien a,
+#res_script .link a {
+  color: var(--brand) !important;
+  text-decoration: none !important;
+}
+
+#res_script .titre a:hover,
+#res_script .title a:hover,
+#res_script .bib_title a:hover,
+#res_script .entry-title a:hover,
+#res_script dd.ValeurRes a:hover,
+#res_script dt.ChampRes a:hover,
+#res_script .doi a:hover,
+#res_script .DOI a:hover,
+#res_script .lien a:hover,
+#res_script .link a:hover {
+  color: var(--brand-strong) !important;
+  text-decoration: underline !important;
 }
 
 /* Container */

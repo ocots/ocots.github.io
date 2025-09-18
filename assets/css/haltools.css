@@ -1,14 +1,16 @@
 /* Custom theme for HALtools output to match Olivier Cots website */
 
 :root {
-  --bg: #0b0c10;
-  --bg-elev: #12131a;
+  --bg: #1a1d2e;
+  --bg-elev: #2a2d46;
   --text: #e8eaf0;
-  --muted: #b9bfd1;
-  --brand: #5ac8fa;
-  --accent: #a78bfa;
-  --border: #242633;
-  --tile: #151826;
+  --muted: #9ca3af;
+  --brand: #f84b0f;
+  --brand-strong: #ff6b35;
+  --accent: #1947ba;
+  --surface: #242742;
+  --border: #3a3d5a;
+  --tile: #2f3349;
   --radius: 14px;
 }
 
@@ -22,9 +24,9 @@ html, body {
 }
 
 a { color: var(--brand) !important; text-decoration: none; }
-a:hover { color: #2fb3f7 !important; }
+a:hover { color: #ff6b35 !important; }
 
-/* Force link colors inside HALtools iframe */
+/* Force link colors inside HALtools iframe - General */
 #res_script a,
 #res_script a:link,
 #res_script a:visited {
@@ -34,8 +36,37 @@ a:hover { color: #2fb3f7 !important; }
 
 #res_script a:hover,
 #res_script a:focus {
-  color: #2fb3f7 !important;
+  color: var(--brand-strong) !important;
   text-decoration: underline;
+}
+
+/* Specific targeting for HALtools title and DOI links */
+#res_script .titre a,
+#res_script .title a,
+#res_script .bib_title a,
+#res_script .entry-title a,
+#res_script dd.ValeurRes a,
+#res_script dt.ChampRes a,
+#res_script .doi a,
+#res_script .DOI a,
+#res_script .lien a,
+#res_script .link a {
+  color: var(--brand) !important;
+  text-decoration: none !important;
+}
+
+#res_script .titre a:hover,
+#res_script .title a:hover,
+#res_script .bib_title a:hover,
+#res_script .entry-title a:hover,
+#res_script dd.ValeurRes a:hover,
+#res_script dt.ChampRes a:hover,
+#res_script .doi a:hover,
+#res_script .DOI a:hover,
+#res_script .lien a:hover,
+#res_script .link a:hover {
+  color: var(--brand-strong) !important;
+  text-decoration: underline !important;
 }
 
 /* Container */
