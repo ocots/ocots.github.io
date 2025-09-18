@@ -2,16 +2,16 @@
 <svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OC">
   <defs>
     <radialGradient id="bg" cx="50%" cy="40%" r="70%">
-      <stop offset="0%" stop-color="#5ac8fa"/>
-      <stop offset="100%" stop-color="#2fb3f7"/>
+      <stop offset="0%" stop-color="#f84b0f"/>
+      <stop offset="100%" stop-color="#ff6b35"/>
     </radialGradient>
   </defs>
-  <!-- Blue round -->
+  <!-- Orange circle -->
   <circle cx="256" cy="256" r="240" fill="url(#bg)"/>
   <!-- subtle inner ring -->
-  <circle cx="256" cy="256" r="238" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="4"/>
-  <!-- OC letters -->
-  <g fill="#ffffff" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif" font-weight="800" font-size="210" text-anchor="middle" dominant-baseline="middle">
-    <text x="256" y="272" letter-spacing="-6">OC</text>
+  <circle cx="256" cy="256" r="238" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="4"/>
+  <!-- OC letters - maximized size -->
+  <g fill="#ffffff" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif" font-weight="900" font-size="280" text-anchor="middle" dominant-baseline="middle">
+    <text x="256" y="285" letter-spacing="-12">OC</text>
   </g>
 </svg>
