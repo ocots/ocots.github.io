@@ -67,7 +67,7 @@ p { margin: 0 0 1rem; }
 ul { margin: 0; padding: 0 0 0 1.1rem; }
 
 .container { max-width: var(--container); margin: 0 auto; padding: 0 1.2rem; }
-.section { padding-top: 4rem; }
+.section { padding-top: 6rem; padding-bottom: 4rem;}
 
 /* Accessibility */
 .skip-link {
@@ -185,7 +185,7 @@ ul { margin: 0; padding: 0 0 0 1.1rem; }
 .arrow-list a:hover::after { transform: translate(2px, -2px); }
 
 /* Tiles */
-.link-tiles { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+.link-tiles { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; }
 .tile { display: grid; place-items: center; min-height: 120px; border-radius: var(--radius); border: 1px solid var(--border); background: linear-gradient(180deg, var(--surface), var(--tile)); color: var(--text); font-weight: 700; letter-spacing: 0.2px; box-shadow: var(--shadow); }
 .tile:hover { background: color-mix(in oklab, var(--tile), var(--brand) 12%); }
 

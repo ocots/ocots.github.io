@@ -22,32 +22,7 @@
   <body>
     <a class="skip-link" href="#content">Skip to content</a>
 
-    <header class="site-header">
-      <div class="container header-inner">
-        <a href="#top" class="brand" aria-label="Home">
-          <span class="brand-mark">OC</span>
-          <span class="brand-text">Olivier Cots</span>
-        </a>
-        <nav class="nav" aria-label="Primary">
-          <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle menu">
-            <span class="nav-toggle-bar"></span>
-            <span class="nav-toggle-bar"></span>
-            <span class="nav-toggle-bar"></span>
-          </button>
-          <ul id="primary-menu" class="nav-list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#interests">Research</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#teaching">Teaching</a></li>
-            <li><a href="#software">Software</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-          <span class="theme-icon" aria-hidden="true">🌙</span>
-        </button>
-      </div>
-    </header>
+    <header class="site-header"></header>
 
     <main id="content">
       <section class="hero" id="top">
@@ -67,8 +42,15 @@
             <div class="hero-bottom">
               <div class="hero-actions">
                 <a class="btn" href="#about">Learn more</a>
-                <a class="btn" href="#publications">Publications</a>
+                <a class="btn" href="publications.html">Publications</a>
               </div>
+              <ul class="social-links">
+                <li><a href="https://cv.hal.science/ocots" target="_blank" rel="noopener">HAL CV</a></li>
+                <li><a href="https://github.com/ocots" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://scholar.google.com/citations?user=JVn4K6UAAAAJ&hl=fr" target="_blank" rel="noopener">Google Scholar</a></li>
+                <li><a href="https://www.researchgate.net/profile/Olivier-Cots?ev=hdr_xprf" target="_blank" rel="noopener">ResearchGate</a></li>
+                <li><a href="https://arxiv.org/a/0000-0002-4703-4369.html" target="_blank" rel="noopener">arXiv</a></li>
+              </ul>
               <div class="hero-logos">
                 <a href="https://www.irit.fr/" target="_blank" rel="noopener" aria-label="IRIT website">
                   <img src="assets/figs/logo-irit.png" alt="IRIT" class="hero-logo" />
@@ -109,50 +91,40 @@
         </div>
       </section>
 
-      <section class="section" id="interests">
-        <div class="container grid two">
-          <div>
-            <h2>Research Interests</h2>
-            <ul>
-              <li>Optimal control theory and applications</li>
-              <li>Differential geometry and geometric control</li>
-              <li>Numerical algorithms for optimal control</li>
-              <li>Time-optimal problems, bang-bang controls, singular arcs</li>
-              <li>Applications in various fields</li>
-            </ul>
-          </div>
-          <div class="callout">
-            <h3>Selected Profiles</h3>
-            <ul class="arrow-list">
-              <li><a href="https://cv.hal.science/ocots" target="_blank" rel="noopener">HAL CV</a></li>
-              <li><a href="https://github.com/ocots" target="_blank" rel="noopener">GitHub</a></li>
-              <li><a href="https://scholar.google.com/citations?user=JVn4K6UAAAAJ&hl=fr" target="_blank" rel="noopener">Google Scholar</a></li>
-              <li><a href="https://www.researchgate.net/profile/Olivier-Cots?ev=hdr_xprf" target="_blank" rel="noopener">ResearchGate</a></li>
-              <li><a href="https://arxiv.org/a/0000-0002-4703-4369.html" target="_blank" rel="noopener">arXiv</a></li>
-            </ul>
-          </div>
+      <section class="section" id="profiles">
+        <div class="container">
+          <h2>Research Profiles</h2>
+          <p>
+            A selection of my academic profiles:
+          </p>
+          <ul class="link-tiles">
+            <li><a class="tile" href="https://cv.hal.science/ocots" target="_blank" rel="noopener"><span>HAL CV</span></a></li>
+            <li><a class="tile" href="https://github.com/ocots" target="_blank" rel="noopener"><span>GitHub</span></a></li>
+            <li><a class="tile" href="https://scholar.google.com/citations?user=JVn4K6UAAAAJ&hl=fr" target="_blank" rel="noopener"><span>Google Scholar</span></a></li>
+            <li><a class="tile" href="https://www.researchgate.net/profile/Olivier-Cots?ev=hdr_xprf" target="_blank" rel="noopener"><span>ResearchGate</span></a></li>
+            <li><a class="tile" href="https://arxiv.org/a/0000-0002-4703-4369.html" target="_blank" rel="noopener"><span>arXiv</span></a></li>
+          </ul>
         </div>
       </section>
 
       <section class="section" id="publications">
         <div class="container">
           <h2>Publications</h2>
+          <div class="muted" style="margin-top: 0.6rem;">
+            <a href="https://cv.hal.science/ocots" target="_blank" rel="noopener">View all on HAL ↗</a>
+          </div>
           <!-- HALtools (official HAL tool) -->
           <div class="embed-card" id="hal-haltools">
-            <h3>HAL Publications — recent years</h3>
             <iframe
               id="haltools-frame"
               title="HAL Publications — Olivier Cots (HALtools)"
               src="https://haltools.inria.fr/Public/afficheRequetePubli.php?auteur_exp=Olivier,%20Cots&CB_auteur=oui&CB_titre=oui&CB_article=oui&CB_DOI=oui&CB_typdoc=oui&langue=Anglais&tri_exp=annee_publi&tri_exp2=typdoc&tri_exp3=date_publi&ordre_aff=TA&Fen=Aff"
               width="100%"
-              height="1080"
+              height="600px"
               frameborder="0"
               loading="lazy"
               style="background: transparent;"
             ></iframe>
-            <div class="muted" style="margin-top: 0.6rem;">
-              <a href="https://cv.hal.science/ocots" target="_blank" rel="noopener">View all on HAL ↗</a>
-            </div>
           </div>
         </div>
       </section>

@@ -1,5 +1,55 @@
 // Main JS for Olivier Cots — personal website
 (function () {
+  // Load shared header
+  async function loadHeader() {
+    const headerContainer = document.querySelector('.site-header');
+    if (!headerContainer) return;
+
+    try {
+      const response = await fetch('assets/html/header.html');
+      const html = await response.text();
+      headerContainer.outerHTML = html;
+      
+      // Re-initialize event listeners after header is loaded
+      const root = document.documentElement;
+      const themeToggle = document.getElementById('theme-toggle');
+      const navToggle = document.querySelector('.nav-toggle');
+      const navList = document.getElementById('primary-menu');
+      
+      // Theme handling
+      if (themeToggle) {
+        const currentTheme = root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+        themeToggle.querySelector('.theme-icon').textContent = currentTheme === 'light' ? '☀️' : '🌙';
+        
+        themeToggle.addEventListener('click', () => {
+          const isLight = root.getAttribute('data-theme') === 'light';
+          setTheme(isLight ? 'dark' : 'light');
+          updateHaltoolsCss();
+        });
+      }
+      
+      // Mobile nav toggle
+      if (navToggle && navList) {
+        navToggle.addEventListener('click', () => {
+          const open = navList.classList.toggle('open');
+          navToggle.setAttribute('aria-expanded', String(open));
+        });
+
+        navList.addEventListener('click', (e) => {
+          if (e.target.closest('a')) {
+            navList.classList.remove('open');
+            navToggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+    } catch (error) {
+      console.error('Failed to load header:', error);
+    }
+  }
+
+  // Load header before other initialization
+  loadHeader();
+
   const root = document.documentElement;
   const themeToggle = document.getElementById('theme-toggle');
   const navToggle = document.querySelector('.nav-toggle');
